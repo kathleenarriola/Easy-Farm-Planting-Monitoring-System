@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>[FMS] Home</title>
+      <!--Import Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="materialize/css/materialize.min.css"  media="screen,projection"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta charset="UTF-8">
+
+    <style type="text/css"> 
+        /* CONTENT */
+        ::selection {
+            color: black;
+            background-color: white;
+        }
+        /* STICKY FOOTER */
+        body {
+            display: flex;
+            min-height: 100vh;
+            flex-direction: column;
+        }
+        main {
+            flex: 1 0 auto;
+        }
+        /* NAV BAR */
+        nav {
+            /*background-color: #0277bd;*/
+            height: 63px;
+            line-height: 60px;
+        }
+        /* FMS LOGO */
+        #FMSlogo {
+            height: 50px;
+            vertical-align: middle;
+        }
+        /* APP NAME */
+        #appname {
+            font-size: 25px;
+        }
+        /* DROPDOWN */
+        .dropdown-content {
+            min-width: 120px;
+            max-height: 650px;
+            will-change: width, height;
+        }
+        .dropdown-content li > a, .dropdown-content li > span {
+            color: #4caf50;
+        }
+        /* FOOTER */
+        footer.page-footer {
+            margin-top: 0px;
+            padding-top: 0px;
+        }
+        footer.page-footer .footer-copyright {
+            overflow: hidden;
+            height: 50px;
+            line-height: 50px;
+            color: rgba(255, 255, 255, 0.8);
+        }
+        .footer-links {
+            display: inline;
+            margin-left: 5px;
+            margin-right: 5px;
+            font-weight: bold;
+        }
+        /* SOCIAL MEDIA LINKS */
+        .social-media {
+            height: 30px;
+            vertical-align: middle;
+            margin-left: 5px;
+            margin-right: 5px;
+        }
+        .container {
+            height: 100%;
+            margin: 0 auto;
+            max-width: 1280px;
+            width: 85%;
+        }
+        .collapsible-body {
+            display: none;
+            border-bottom: 1px solid #ddd;
+            box-sizing: border-box;
+            background-color: #fff;
+        }
+        i.tiny {
+            font-size: 1.3rem;
+            vertical-align: middle;
+        }
+        footer {
+            margin-top: -20px;
+        }
+    </style>
+
+    </head>
+
+    <body class="grey lighten-2">
+
+        <main>
+            <!-- NAV BAR -->
+            <div class="navbar-fixed">
+                <nav class="green darken-4">
+                    <div class="container">
+                        <div class="nav-wrapper">
+                            <a href="#!" class="brand-logo">
+                                <!-- FMS LOGO -->
+                                <span><img src="assets/images/logo.png" id="FMSlogo"></span>
+                                <!-- APP NAME -->
+                                <span class="white-text" id="appname">&nbsp;&nbsp;&nbsp;FARM HAHAHA</span>
+                            </a>
+                            <!-- MENU -->
+                            <ul class="right hide-on-med-and-down">
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">About</a></li>
+                                <li><a href="#">Contact us</a></li>
+                                <li><a class="dropdown-button" href="#!" data-activates="dropdown1"><i class="material-icons">settings</i></a></li>
+                            </ul>
+                            <!-- SETTINGS DROPDOWN -->
+                            <ul id="dropdown1" class="dropdown-content">
+                              <!--<li><a href="#!">Edit Profile</a></li>-->
+                              <li><a href="#!">Sign Out</a></li>
+                            </ul>
+                            <!-- SIDE NAV FOR MOBILE -->
+                            <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+                            <ul class="side-nav" id="mobile-demo">
+                                <li><div class="userView green darken-4">
+                                <a href="#!user"><img class="circle" src="assets/images/jem.jpg"></a>
+                                <a href="#!name"><span class="white-text name">Jemimah Mae Molina</span></a>
+                                <a href="#!email"><span class="white-text email">jhmolina@up.edu.ph</span></a>
+                            </div></li>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Profile</a></li>
+                                <li><a href="#">Announcements</a></li>
+                                <!--<li><a href="#">Edit Profile</a></li>-->
+                                <li><a href="#">Sign Out</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </nav>
+            </div>
+            <div class="container">
+                <div class="row"></div>
+                <div class="row">
+                    <div class="col s12 m3 l3">
+                        <ul class="collapsible" data-collapsible="accordion">
+                             <li>
+                                <div class="collapsible-header"><i class="material-icons">class</i>Plants</div>
+                                <div class="collapsible-body">
+                                    <ul>
+                                        <li><a class="black-text" href="view-plants.html">&emsp;&emsp;&emsp;<i class="tiny material-icons">view_headline</i>&emsp;View</a></li>
+                                        <li><a class="black-text" href="add-plant.html">&emsp;&emsp;&emsp;<i class="tiny material-icons">queue</i>&emsp;Add</a></li>
+                                        <li><a class="black-text" href="edit-plant.html">&emsp;&emsp;&emsp;<i class="tiny material-icons">mode_edit</i>&emsp;Edit</a></li>
+                                        <li><a class="black-text" href="delete-plant.html">&emsp;&emsp;&emsp;<i class="tiny material-icons">delete</i>&emsp;Delete</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="collapsible-header"><i class="material-icons">assignment</i>Plots</div>
+                                <div class="collapsible-body">
+                                    <ul>
+                                        <li><a class="black-text" href="view-plots.html">&emsp;&emsp;&emsp;<i class="tiny material-icons">view_headline</i>&emsp;View</a></li>
+                                        <li><a class="black-text" href="add-plot.html">&emsp;&emsp;&emsp;<i class="tiny material-icons">queue</i>&emsp;Add</a></li>
+                                        <li><a class="black-text" href="edit-plot.html">&emsp;&emsp;&emsp;<i class="tiny material-icons">mode_edit</i>&emsp;Edit</a></li>
+                                        <li><a class="black-text" href="delete-plot.html">&emsp;&emsp;&emsp;<i class="tiny material-icons">delete</i>&emsp;Delete</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="collapsible-header"><i class="material-icons">supervisor_account</i>Farm Personnel</div>
+                                <div class="collapsible-body">
+                                    <ul>
+                                        <li><a class="black-text" href="view-personnel.html">&emsp;&emsp;&emsp;<i class="tiny material-icons">view_headline</i>&emsp;View</a></li>
+                                        <li><a class="black-text" href="add-personnel.html">&emsp;&emsp;&emsp;<i class="tiny material-icons">queue</i>&emsp;Add</a></li>
+                                        <li><a class="black-text" href="edit-personnel.html">&emsp;&emsp;&emsp;<i class="tiny material-icons">mode_edit</i>&emsp;Edit</a></li>
+                                        <li><a class="black-text" href="delete-personnel.html">&emsp;&emsp;&emsp;<i class="tiny material-icons">delete</i>&emsp;Delete</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="collapsible-header"><i class="material-icons">info_outline</i>Planting Activities</div>
+                                <div class="collapsible-body">
+                                    <ul>
+                                        <li><a class="black-text" href="view-activities.html">&emsp;&emsp;&emsp;<i class="tiny material-icons">view_headline</i>&emsp;View</a></li>
+                                        <li><a class="black-text" href="add-activity.html">&emsp;&emsp;&emsp;<i class="tiny material-icons">queue</i>&emsp;Add</a></li>
+                                        <li><a class="black-text" href="edit-activity.html">&emsp;&emsp;&emsp;<i class="tiny material-icons">mode_edit</i>&emsp;Edit</a></li>
+                                        <li><a class="black-text" href="delete-activity.html">&emsp;&emsp;&emsp;<i class="tiny material-icons">delete</i>&emsp;Delete</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="collapsible-header"><i class="material-icons">library_books</i>Reports</div>
+                                <div class="collapsible-body">
+                                    <ul>
+                                        <li><a class="black-text" href="view-reports.html">&emsp;&emsp;&emsp;<i class="tiny material-icons">view_headline</i>&emsp;View</a></li>
+                                        <li><a class="black-text" href="add-report.html">&emsp;&emsp;&emsp;<i class="tiny material-icons">queue</i>&emsp;Add</a></li>
+                                        <li><a class="black-text" href="edit-report.html">&emsp;&emsp;&emsp;<i class="tiny material-icons">mode_edit</i>&emsp;Edit</a></li>
+                                        <li><a class="black-text" href="delete-report.html">&emsp;&emsp;&emsp;<i class="tiny material-icons">delete</i>&emsp;Delete</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col s12 m9 l9">
+                        <div class="container">
+                            <table class="bordered">
+                                <thead>
+                                  <tr>
+                                      <th data-field="id">Plot no.</th>
+                                      <th data-field="name">Status</th>
+                                      <th data-field="price">Remarks</th>
+                                  </tr>
+                                </thead>
+
+                                <tbody>
+                                  <tr>
+                                    <td>00001</td>
+                                    <td>occupied</td>
+                                    <td>-</td>
+                                  </tr>
+                                  <tr>
+                                    <td>00002</td>
+                                    <td>available</td>
+                                    <td>-</td>
+                                  </tr>
+                                  <tr>
+                                    <td>00003</td>
+                                    <td>available</td>
+                                    <td>-</td>
+                                  </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- FOOTER -->
+        <footer class="page-footer footer-copyright grey darken-4">
+            <div class="footer-copyright green darken-4">
+                <div class="container center green darken-4">
+                    © 2016 CMSC 127 ICS-UPLB | All rights reserved
+                </div>
+            </div>
+        </footer>
+
+
+     <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+
+    </body>
+</html>

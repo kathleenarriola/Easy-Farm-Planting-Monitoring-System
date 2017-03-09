@@ -1,0 +1,101 @@
+<div class="center">
+    <div class="card bordered z-depth-2">
+        <div class="card-header green darken-4">
+            <a href="#" class="white-text"><img class="responsive-img center-align" id="fmslogo" src="../../assets/images/logo.png" id="fmslogo" align="middle"></a>
+        </div>
+        <div class="card-content">
+            <form name="appForm">
+                <label>Credentials</label>
+                <div class="row">
+                    <div class="input-field col s12 m6 l6">
+                        <input id="username" type="text" class="validate" ng-model="username">
+                        <label for="username">&nbsp;&nbsp;&nbsp;Username</label>
+                    </div>
+                    <div class="input-field col s12 m6 l6">
+                        <input id="password" type="password" class="validate" ng-model="password">
+                        <label for="password">&nbsp;&nbsp;&nbsp;Password</label>
+                    </div>
+                </div>
+                <label>Basic Information</label>
+                <div class="row">
+                    <div class="input-field col s12 m4 l4">
+                        <input id="lname" type="text" class="validate" ng-model="lname">
+                        <label for="lname">&nbsp;&nbsp;&nbsp;Last name</label>
+                    </div>
+                    <div class="input-field col s12 m4 l4">
+                        <input id="fname" type="text" class="validate" ng-model="fname">
+                        <label for="fname">&nbsp;&nbsp;&nbsp;First name</label>
+                    </div>
+                    <div class="input-field col s12 m4 l4">
+                        <input id="mname" type="text" class="validate" ng-model="mi">
+                        <label for="mname">&nbsp;&nbsp;&nbsp;Middle name</label>
+                    </div>
+                </div>
+                <label>Birthdate</label>
+                <div class="row">
+                    <!-- <div class="input-field col s12 m2 l2">
+                        <select class="inputfields" id="birthdate"  style="margin-tops:40px" ng-model="monh">
+                            <option value="" disabled selected>Month</option>
+                            <option value="1">January</option>
+                            <option value="2">February</option>
+                            <option value="3">March</option>
+                            <option value="4">April</option>
+                            <option value="5">May</option>
+                            <option value="6">June</option>
+                            <option value="7">July</option>
+                            <option value="8">August</option>
+                            <option value="9">September</option>
+                            <option value="10">October</option>
+                            <option value="11">November</option>
+                            <option value="12">December</option>
+                        </select>
+                    </div> -->
+                    <input type="date" class="datepicker" ng-model="bday">
+                    <!-- <div class="input-field col s12 m2 l2">
+                        <input id="day" type="text" class="validate" ng-model="month">
+                        <label for="day">&nbsp;&nbsp;&nbsp;Month</label>
+                    </div>
+                    <div class="input-field col s12 m2 l2">
+                        <input id="day" type="text" class="validate" ng-model="day">
+                        <label for="day">&nbsp;&nbsp;&nbsp;Day</label>
+                    </div>
+                    <div class="input-field col s12 m2 l2">
+                        <input id="year" type="text" class="validate" ng-model="year">
+                        <label for="year">&nbsp;&nbsp;&nbsp;Year</label>
+                    </div>
+                    -->
+                    <div class="input-field col s12 m2 l2">
+                        <input id="contact" type="text" class="validate" ng-model="age">
+                        <label for="contact">&nbsp;&nbsp;&nbsp;Age</label>
+                    </div>
+                    
+                </div>
+
+                <div class="row">
+                    <div class="inputfield col s12 m4 l4">
+                        <input id="farmOwned" type="text" class="validate" ng-model="farmOwned">
+                        <label for="farmOwned">&nbsp;&nbsp;&nbsp;Farm Owned</label>
+                    </div>
+                    <div class="input-field col s12" style="text-align:center;">
+                        <input type="checkbox" class="filled-in" id="filled-in-box">
+                        <label for="filled-in-box">I certify that the above information is true and correct as to the best of my knowledge.</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12 center-align">
+                        <a href="" class="btn waves-effect waves-light green darken-4" id="signup" ng-click="addAdmin()">Sign up</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- <script type="text/javascript">
+    $(document).ready(function() {
+        $('.datepicker').pickdate( {
+            format: 'yyyy-mm-dd',
+            selectMonths: true,
+        });
+    });
+</script>> -->

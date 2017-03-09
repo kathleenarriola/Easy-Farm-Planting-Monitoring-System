@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>[FMS] Sign up</title>
+        
+         <!--Import Google Icon Font-->
+        <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+        <!--Import materialize.css-->
+        <link type="text/css" rel="stylesheet" href="/assets/materialize/css/materialize.min.css"  media="screen,projection"/>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+        <!--Let browser know website is optimized for mobile-->
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+        <script src="/assets/js/angular.min.js"></script>
+        <script src="/assets/js/angular-route.js"></script>
+
+    </head>
+
+    <body ng-app="app">
+   
+        <div ng-view></div>
+   
+        <!-- FOOTER -->
+        <footer class="page-footer footer-copyright grey darken-4">
+            <div class="footer-copyright green darken-4">
+                <div class="container center green darken-4">
+                    © 2016 CMSC 127 ICS-UPLB | All rights reserved
+                </div>
+            </div>
+        </footer>
+           
+        <!--Import jQuery before materialize.js-->
+        <script type="text/javascript" src="app.js"></script>
+        
+        <script type="text/javascript" src="controllers/user.controller.js"></script>
+        <script type="text/javascript" src="controllers/plant.controller.js"></script>
+        <script type="text/javascript" src="controllers/plot.controller.js"></script>
+        <script type="text/javascript" src="controllers/activity.controller.js"></script>
+
+        <script type="text/javascript" src="services/user.service.js"></script>
+        <script type="text/javascript" src="services/plant.service.js"></script>
+        <script type="text/javascript" src="services/plot.service.js"></script>
+        <script type="text/javascript" src="services/activity.service.js"></script>
+        <!-- <script src="http://www.w3schools.com/lib/w3data.js"></script> -->
+        
+
+
+
+    </body>
+</html>

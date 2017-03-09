@@ -1,0 +1,73 @@
+<div class="col s12 m3 l3">
+    <ul class="collapsible" data-collapsible="accordion">
+         <li>
+            <div class="collapsible-header"><i class="material-icons">class</i>Plants</div>
+            <div class="collapsible-body">
+                <ul>
+                    <li><a class="black-text" href="view-plants.html">&emsp;&emsp;&emsp;<i class="tiny material-icons">view_headline</i>&emsp;View</a></li>
+                    <li><a class="black-text" href="add-plant.html">&emsp;&emsp;&emsp;<i class="tiny material-icons">queue</i>&emsp;Add</a></li>
+                    <li><a class="black-text" href="edit-plant.html">&emsp;&emsp;&emsp;<i class="tiny material-icons">mode_edit</i>&emsp;Edit</a></li>
+                    <li><a class="black-text" href="delete-plant.html">&emsp;&emsp;&emsp;<i class="tiny material-icons">delete</i>&emsp;Delete</a></li>
+                </ul>
+            </div>
+        </li>
+        <li>
+            <div class="collapsible-header"><i class="material-icons">assignment</i>Plots</div>
+            <div class="collapsible-body">
+                <ul>
+                    <li><a class="black-text" href="/../plot/view-plots.html">&emsp;&emsp;&emsp;<i class="tiny material-icons">view_headline</i>&emsp;View</a></li>
+                    <li><a class="black-text" href="/../plot/add-plot.html">&emsp;&emsp;&emsp;<i class="tiny material-icons">queue</i>&emsp;Add</a></li>
+                    <li><a class="black-text" href="/../plot/edit-plot.html">&emsp;&emsp;&emsp;<i class="tiny material-icons">mode_edit</i>&emsp;Edit</a></li>
+                    <li><a class="black-text" href="/../plot/delete-plot.html">&emsp;&emsp;&emsp;<i class="tiny material-icons">delete</i>&emsp;Delete</a></li>
+                </ul>
+            </div>
+        </li>
+        <li>
+            <div class="collapsible-header"><i class="material-icons">supervisor_account</i>Farm Personnel</div>
+            <div class="collapsible-body">
+                <ul>
+                    <li><a class="black-text" href="/../user/personnel/view-personnel.html">&emsp;&emsp;&emsp;<i class="tiny material-icons">view_headline</i>&emsp;View</a></li>
+                    <li><a class="black-text" href="/../user/personnel/add-personnel.html">&emsp;&emsp;&emsp;<i class="tiny material-icons">queue</i>&emsp;Add</a></li>
+                    <li><a class="black-text" href="/../user/personnel/edit-personnel.html">&emsp;&emsp;&emsp;<i class="tiny material-icons">mode_edit</i>&emsp;Edit</a></li>
+                    <li><a class="black-text" href="/../user/personnel/delete-personnel.html">&emsp;&emsp;&emsp;<i class="tiny material-icons">delete</i>&emsp;Delete</a></li>sss
+                </ul>
+            </div>
+        </li>
+        <li>
+            <div class="collapsible-header"><i class="material-icons">info_outline</i>Planting Activities</div>
+            <div class="collapsible-body">
+                <ul>
+                    <li><a class="black-text" href="/../activity/view-activities.html">&emsp;&emsp;&emsp;<i class="tiny material-icons">view_headline</i>&emsp;View</a></li>
+                    <li><a class="black-text" href="/../activity/add-activity.html">&emsp;&emsp;&emsp;<i class="tiny material-icons">queue</i>&emsp;Add</a></li>
+                    <li><a class="black-text" href="/../activity/edit-activity.html">&emsp;&emsp;&emsp;<i class="tiny material-icons">mode_edit</i>&emsp;Edit</a></li>
+                    <li><a class="black-text" href="/../activity/delete-activity.html">&emsp;&emsp;&emsp;<i class="tiny material-icons">delete</i>&emsp;Delete</a></li>
+                </ul>
+            </div>
+        </li>
+        <li>
+            <div class="collapsible-header"><i class="material-icons">library_books</i>Reports</div>
+            <div class="collapsible-body">
+                <ul>
+                    <li><a class="black-text" href="/../report/view-reports.html">&emsp;&emsp;&emsp;<i class="tiny material-icons">view_headline</i>&emsp;View</a></li>
+                    <li><a class="black-text" href="/../report/add-report.html">&emsp;&emsp;&emsp;<i class="tiny material-icons">queue</i>&emsp;Add</a></li>
+                    <li><a class="black-text" href="/../report/edit-report.html">&emsp;&emsp;&emsp;<i class="tiny material-icons">mode_edit</i>&emsp;Edit</a></li>
+                    <li><a class="black-text" href="/../report/delete-report.html">&emsp;&emsp;&emsp;<i class="tiny material-icons">delete</i>&emsp;Delete</a></li>
+                </ul>
+            </div>
+        </li>
+    </ul>
+</div>
+
+<script>
+    $(document).ready(function(){
+        $('.collapsible').collapsible();
+        $('select').material_select();
+        // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
+        $('.modal').modal();
+        $('.button-collapse').sideNav({
+              menuWidth: 300, // Default is 240
+              closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
+            }
+        );
+    });
+</script>
